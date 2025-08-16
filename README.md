@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌆 Citiuation
 
-## Getting Started
+Citiuation is a **web app to compare the cost of living between different cities**, helping users make informed decisions about relocation / budgeting.  
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Compare living costs like rent, groceries, transportation, and utilities  
+- Select multiple cities for side-by-side comparison  
+- Dynamic UI built with React, Next.js, and Material-UI (MUI)  
+- Interactive charts for easy visualization   
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+- **Frontend:** React, Next.js, TypeScript  
+- **UI Components:** Material-UI (MUI)  
+- **Charts:** Recharts (for visual comparisons)  
+- **State Management:** React hooks & context  
+- **Deployment:** Vercel  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Try it Live
+Check it out here: [Citiuation App](https://citiuation.vercel.app/) 🌟  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How it Works
+1. Select cities you want to compare.  
+2. View costs in different categories.  
+3. See visual charts to quickly understand the differences.  
+4. Make smarter decisions based on the comparison data.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Future Improvements
+- Add more cities and real-time data  
+- User authentication & saved comparisons  
+- More detailed breakdowns (entertainment, healthcare, education)  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👩‍💻 Built by Areeba Asad

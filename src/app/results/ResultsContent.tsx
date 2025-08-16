@@ -1,12 +1,12 @@
 "use client";
 
 import { Suspense } from "react";
-import ResultsContent from "./ResultsContent";
+import ComparisonResults from "./ComparisonResults";
 
-export default function ResultsPage() {
+export default function ResultsContent() {
   return (
     <Suspense fallback={<p>Loading...</p>}>
-      <ResultsContent />
+      <ComparisonResults />  
     </Suspense>
   );
 }

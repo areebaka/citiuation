@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Header from "../components/Header";
 import ThemeRegistry from "../components/ThemeRegistry";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,7 +9,7 @@ export const metadata = {
   title: "Citiuation",
   description: "Compare cost of living between cities",
     icons: {
-    icon: "/favicon.svg", 
+    icon: "/favicon.png", 
   },
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.className}>
       <body>
         <ThemeRegistry>
-          <Header />
+          <Navbar />
           <main>{children}</main>
         </ThemeRegistry>
       </body>

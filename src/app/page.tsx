@@ -1,32 +1,27 @@
 "use client"
 import { useState } from "react";
-import { Container, Typography, Button, Box, Paper, Stack } from "@mui/material";
+import { Container, Typography, Button,  Paper, Stack } from "@mui/material";
 import CitySelector from "../components/CitySelector";
 import InfoCard from "../components/InfoCard";
+import { useRouter } from "next/navigation";
 
 
 export default function Home() {
   const [usCity, setUsCity] = useState("");
   const [pkCity, setPkCity] = useState("");
 
+ 
+    const router = useRouter();
+
   const handleCompare = () => {
-    // For now just log, later you can route to results page
-    console.log(`Comparing ${usCity} with ${pkCity}`);
+    if (usCity && pkCity) {
+      router.push(`/results?us=${usCity}&pk=${pkCity}`);
+    }
   };
+
 
   return (
     <Container maxWidth="sm" sx={{ textAlign: "center", py: 6 }}>
-        {/* <Box
-        component="img"
-        src="./compare_arrows.svg" 
-        alt="City comparison"
-        sx={{
-          width: "100%",
-          maxWidth: 60,
-          mx: "auto",
-          // my: 2,
-        }}
-      /> */}
 
       <Typography variant="h3" fontWeight="bold" gutterBottom>
         Citiuation
